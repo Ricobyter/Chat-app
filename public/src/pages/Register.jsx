@@ -19,11 +19,16 @@ function Register() {
     setPassword: "",
   })
 
+  useEffect(() => {
+    if(localStorage.getItem('chat-app-user')){
+      navigate('/')
+    }
+  }, [])
+
   const handleSubmit =async (event) => {
     event.preventDefault();
     // alert("form");
     if(handleValidation()){
-      console.log("processing", registerRoute)
       const{password, email, username} = values;
       const {data} = await axios.post(registerRoute,{
         username,
@@ -162,6 +167,7 @@ form{
   span{
     color: white;
     text-transform: uppercase;
+    margin-top: -2rem;
     a{
       color: #bb3bf4;
       font-weight: bold;
