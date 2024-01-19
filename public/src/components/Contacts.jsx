@@ -9,6 +9,7 @@ export default function Contacts({ contacts, currentUser }) {
   const [currentSelected, setCurrentSelected] = useState(undefined)
 
   useEffect(() => {
+    console.log(contacts)
     if (currentUser) {
       setCurrentUserImage(currentUser.avatarImage);
       setCurrentUserName(currentUser.username)
@@ -49,10 +50,10 @@ export default function Contacts({ contacts, currentUser }) {
             </div>
             <div className="current-user">
               <div className="avatar">
-                <img src={`data:image/svg+xml;base64,${contact.avatarImage}`} alt="avatar" />
+                <img src={`data:image/svg+xml;base64,${currentUserImage}`} alt="avatar" />
               </div>
               <div className="username">
-                <h3>{contact.username}</h3>
+                <h2>{currentUserName}</h2>
               </div>
             </div>
           </Container>
@@ -62,4 +63,64 @@ export default function Contacts({ contacts, currentUser }) {
   )
 }
 
-const Container = styled.div;
+const Container = styled.div`
+display: grid;
+grid-template-rows: 10% 75% 15%;
+overflow: hidden;
+background-color: #080420;
+
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  img{
+    height: 2rem;
+  }
+  
+  h3{
+    color: white;
+    text-transform: uppercase;
+    
+  }
+}
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  gap: 0.8rem; 
+  
+  .contact{
+    background-color: #ffffff39;
+    min-height: 5rem;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    .avatar{
+      img{
+        height: 3rem;
+      }
+            }
+      .username{
+        h3{
+          color: white;
+        }
+      }
+  }
+  .selected{
+    background-color: #9186f3;
+  }
+
+}
+
+
+
+`;
