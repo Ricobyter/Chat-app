@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logo2.png'
-import {ToastContainer, toast} from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css"
 import axios from "axios"
 import { registerRoute } from '../utils/APIRoutes'
@@ -12,7 +12,7 @@ function Register() {
 
   const navigate = useNavigate()
 
-  const[values, setValues] = useState({
+  const [values, setValues] = useState({
     username: "",
     email: "",
     password: "",
@@ -20,25 +20,25 @@ function Register() {
   })
 
   useEffect(() => {
-    if(localStorage.getItem('chat-app-user')){
+    if (localStorage.getItem('chat-app-user')) {
       navigate('/')
     }
   }, [])
 
-  const handleSubmit =async (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // alert("form");
-    if(handleValidation()){
-      const{password, email, username} = values;
-      const {data} = await axios.post(registerRoute,{
+    if (handleValidation()) {
+      const { password, email, username } = values;
+      const { data } = await axios.post(registerRoute, {
         username,
         email,
         password
       });
-      if(data.status === false ) {
+      if (data.status === false) {
         toast.error(data.msg, toastOptions)
       }
-      if(data.status === true) {
+      if (data.status === true) {
         localStorage.setItem('chat-app-user', JSON.stringify(data.user))
       }
       navigate("/")
@@ -54,64 +54,64 @@ function Register() {
   }
 
   const handleValidation = () => {
-    const{password, confirmPassword, email, username} = values;
-    if(password !== confirmPassword){
-      toast.error("password and confirm password should match",toastOptions);
+    const { password, confirmPassword, email, username } = values;
+    if (password !== confirmPassword) {
+      toast.error("password and confirm password should match", toastOptions);
       return false;
-    }else if(username.length < 3){
-      toast.error("Username should be greater than 3 characters",toastOptions);
+    } else if (username.length < 3) {
+      toast.error("Username should be greater than 3 characters", toastOptions);
       return false;
-    }else if(password.length < 8){
+    } else if (password.length < 8) {
       toast.error("Password should be greater than 8 characters",
-      toastOptions);
+        toastOptions);
       return false;
-    }else if(email === ""){
-      toast.error("Email is required",toastOptions);
+    } else if (email === "") {
+      toast.error("Email is required", toastOptions);
       return false;
     }
     return true;
   }
-  ;
+    ;
 
   const handleChange = (event) => {
-    setValues({...values, [event.target.name]: event.target.value })
+    setValues({ ...values, [event.target.name]: event.target.value })
 
   }
 
   return (
     <>
-    <FormContainer>
-      <form onSubmit={(event) => handleSubmit(event)}>
-        <div className="brand">
-          <img src={Logo} alt="logo" />
-          <h1>Talkie</h1>
-        </div>
-        <input
-          type="text"
-          placeholder='Username'
-          name='username'
-          onChange={e => handleChange(e)} />
-        <input
-          type="email"
-          placeholder='Email'
-          name='email'
-          onChange={e => handleChange(e)} />
-        <input
-          type="password"
-          placeholder='Password'
-          name='password'
-          onChange={e => handleChange(e)} />
-        <input
-          type="password"
-          placeholder='Confirm Password'
-          name='confirmPassword'
-          onChange={e => handleChange(e)} />
+      <FormContainer>
+        <form onSubmit={(event) => handleSubmit(event)}>
+          <div className="brand">
+            <img src={Logo} alt="logo" />
+            <h1>Talkie</h1>
+          </div>
+          <input
+            type="text"
+            placeholder='Username'
+            name='username'
+            onChange={e => handleChange(e)} />
+          <input
+            type="email"
+            placeholder='Email'
+            name='email'
+            onChange={e => handleChange(e)} />
+          <input
+            type="password"
+            placeholder='Password'
+            name='password'
+            onChange={e => handleChange(e)} />
+          <input
+            type="password"
+            placeholder='Confirm Password'
+            name='confirmPassword'
+            onChange={e => handleChange(e)} />
 
-        <button type='submit'>Create User</button>\
-        <span>Already have an account ? <Link to='/login'>Login Now</Link></span>
-      </form>
-    </FormContainer>
-    <ToastContainer />
+          <button type='submit'>Create User</button>\
+          <span>Already have an account ? <Link to='/login'>Login Now</Link></span>
+        </form>
+      </FormContainer>
+      <ToastContainer />
     </>
   )
 }
