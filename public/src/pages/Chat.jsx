@@ -8,6 +8,7 @@ import Contacts from '../components/Contacts';
 function Chat() {
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
+  
   const [currentUser, setCurrentuser] = useState(undefined)
   useEffect(() => {
     async function findUsers() {
