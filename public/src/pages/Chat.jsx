@@ -39,14 +39,14 @@ function Chat() {
   }
     , [currentUser]);
 
-    const handleChatChange = (chat) => {
-      setCurrentChat(chat)
-    }
+  const handleChatChange = (chat) => {
+    setCurrentChat(chat)
+  }
   return (
     <Container>
       <div className="container">
-        <Contacts contacts={contacts} currentUser={currentUser} changeChat = {handleChatChange}/>
-           <Welcome />
+        <Contacts contacts={contacts} currentUser={currentUser} changeChat={handleChatChange} />
+        <Welcome currentUser={currentUser}/>
       </div>
     </Container>
   )
