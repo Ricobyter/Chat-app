@@ -8,7 +8,6 @@ import Contacts from '../components/Contacts';
 function Chat() {
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
-  
   const [currentUser, setCurrentuser] = useState(undefined)
   useEffect(() => {
     async function findUsers() {
@@ -49,28 +48,23 @@ function Chat() {
 
 const Container = styled.div`
 height: 100vh;
+width: 100vw;
 display: flex;
 flex-direction: column;
-width: 100vw;
 justify-content: center;
-align-items: center;
 gap: 1rem;
+align-items: center;
 background-color: #131324;
-.container{
-  width: 85vw;
+.container {
   height: 85vh;
+  width: 85vw;
   background-color: #00000076;
   display: grid;
-  grid-template-columns: 25% and 75%;
-  @media screen and (min-width: 720px) and (max-width: 1080px){
-  grid-template-columns: 35% and 65%;
+  grid-template-columns: 25% 75%;
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    grid-template-columns: 35% 65%;
+  }
 }
-  @media screen and (min-width: 360px) and (max-width: 720px){
-  grid-template-columns: 45% and 55%;
-}
-
-
-} 
 
 `
 
