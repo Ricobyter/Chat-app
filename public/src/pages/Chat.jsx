@@ -8,7 +8,8 @@ import Contacts from '../components/Contacts';
 function Chat() {
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
-  const [currentUser, setCurrentuser] = useState(undefined)
+  const [currentUser, setCurrentuser] = useState(undefined);
+  const [currentChat, setCurrentChat] = useState(undefined)
   useEffect(() => {
     async function findUsers() {
       if (!localStorage.getItem('chat-app-user')) {
@@ -35,11 +36,15 @@ function Chat() {
     }
     callAPI()
   }
-    , [currentUser])
+    , [currentUser]);
+
+    const handleChatChange = (chat) => {
+      setCurrentChat(chat)
+    }
   return (
     <Container>
       <div className="container">
-        <Contacts contacts={contacts} currentUser={currentUser} />
+        <Contacts contacts={contacts} currentUser={currentUser} changeChat = {handleChatChange}/>
 
       </div>
     </Container>
