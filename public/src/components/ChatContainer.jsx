@@ -4,39 +4,39 @@ import Logout from './Logout'
 import ChatInput from './ChatInput'
 import Messages from './Messages'
 
-export default function ChatContainer({currentChat}) {
+export default function ChatContainer({ currentChat }) {
 
-    const handleSendMsg = async (msg) => {}
+    const handleSendMsg = async (msg) => { }
 
-  return (
-    <>
-    {
-        currentChat && (
-    <Container>
-        <div className="chat-header">
-            <div className="user-details">
-                <div className="avatar">
-                <img
-                      src={`data:image/svg+xml;base64,${currentChat.avatarImage}`}
-                      alt=""
-                    />
-                </div>
-                <div className="username">
-                    <h3>
-                        {currentChat.username}
-              
+    return (
+        <>
+            {
+                currentChat && (
+                    <Container>
+                        <div className="chat-header">
+                            <div className="user-details">
+                                <div className="avatar">
+                                    <img
+                                        src={`data:image/svg+xml;base64,${currentChat.avatarImage}`}
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="username">
+                                    <h3>
+                                        {currentChat.username}
 
-                    </h3>
-                </div>
-            </div>
-            <Logout/>
-        </div>
-<Messages />
-<ChatInput handleSendMsg = {handleSendMsg}/>
-    </Container>
-        )}
-    </>
-  )
+
+                                    </h3>
+                                </div>
+                            </div>
+                            <Logout />
+                        </div>
+                        <Messages />
+                        <ChatInput handleSendMsg={handleSendMsg} />
+                    </Container>
+                )}
+        </>
+    )
 }
 
 const Container = styled.div`
