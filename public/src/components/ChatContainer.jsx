@@ -11,14 +11,14 @@ export default function ChatContainer({ currentChat, currentUser }) {
 
     const [messages, setMessages] = useState([])
 
-    useEffect( () => {
-        async function messagesent(){
+    useEffect( async () => {
+        // async function messagesent(){
             const response = await axios.post(getAllMessagesRoute, {
                 from: currentUser._id,
-                                to: currentChat._id,
+                to: currentChat._id,
                             });
                             setMessages(response.data)
-        } messagesent()
+        //} //messagesent()
 
     }, [currentChat])
 
@@ -59,8 +59,8 @@ export default function ChatContainer({ currentChat, currentUser }) {
                                     return (
                                         <div>
                                             <div className={`message ${message.fromSelf ? "sended" : "received"}`}>
-                                                <div className="content">
-                                                    <p>
+                                                <div className="content text-white max-w-80 p-1 border-none rounded-lg text-[1.1rem] break-words ">
+                                                    <p className='px-2 py-1'>
                                                         {message.message}
                                                     </p>
                                                 </div>
@@ -82,6 +82,13 @@ export default function ChatContainer({ currentChat, currentUser }) {
 
 const Container = styled.div`
 padding-top: 1rem;
+display: grid;
+grid-template-rows: 10% 78% 12%;
+gap: 0.1rem;
+overflow: hidden;
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    grid-template-columns: 15% 70% 15%;
+  }
 .chat-header{
     display: flex;
     justify-content: space-between;
@@ -107,7 +114,31 @@ padding-top: 1rem;
 
 }
 
-
+.chat-messages{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+    .message: {
+        display : flex;
+        align-items: center;
+    }
+    .sended{
+        display: flex;
+        justify-content: flex-end;
+        .content{
+            background-color: #4f04ff21;
+        }
+    }
+    .received{
+        display: flex;
+        justify-content: flex-start;
+        .content{
+            background-color: #9900ff20;
+        }
+    }
+}
 
 
 `
