@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import Logout from './Logout'
 import ChatInput from './ChatInput'
 import Messages from './Messages'
+import axios from 'axios';
+import { sendMessageRoute } from '../utils/APIRoutes'
+
 
 export default function ChatContainer({ currentChat }) {
 
