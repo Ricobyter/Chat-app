@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import Logo from '../assets/logo.svg'
+import Logo from '../assets/logo2.png'
 
 export default function Contacts({ contacts, currentUser, changeChat }) {
 
@@ -151,6 +151,12 @@ display: grid;
         h2 {
           font-size: 1rem;
         }
+      }
+    }
+    @media screen and (min-width: 400px) and (max-width: 720px) {
+      gap: 0.5rem;
+      .username {
+        display : none;
       }
     }
   }
