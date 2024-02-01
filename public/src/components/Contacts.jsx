@@ -144,6 +144,7 @@ display: grid;
       h2 {
         color: white;
       }
+      
     }
     @media screen and (min-width: 720px) and (max-width: 1080px) {
       gap: 0.5rem;
@@ -153,12 +154,8 @@ display: grid;
         }
       }
     }
-    @media screen and (min-width: 400px) and (max-width: 720px) {
-      gap: 0.5rem;
-      .username {
-        display : none;
-      }
-    }
+    
+   
   }
 
 
