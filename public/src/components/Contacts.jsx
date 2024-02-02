@@ -155,5 +155,408 @@ display: grid;
     }
   }
 
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    .contacts {
+      gap: 0.5rem;
+      .contact {
+        min-height: 3rem;
+        .avatar {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .contacts {
+      gap: 1rem;
+      .contact {
+        min-height: 6rem;
+        .avatar {
+          img {
+            height: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    .current-user {
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .current-user {
+      gap: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    .current-user {
+      gap: 1rem;
+      .avatar {
+        img {
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .current-user {
+      gap: 2rem;
+      .avatar {
+        img {
+          height: 4rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .brand {
+      gap: 1rem;
+      img {
+        height: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 667px) {
+    .brand {
+      gap: 1rem;
+      img {
+        height: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    .contacts {
+      gap: 0.5rem;
+      .contact {
+        min-height: 3rem;
+        font-size: 0.5rem;
+        .avatar {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 667px) {
+    .contacts {
+      gap: 1rem;
+      .contact {
+        min-height: 4rem;
+        font-size: 0.5rem;
+        .avatar {
+          img {
+            height: 3rem;
+          }
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    .current-user {
+      gap: 0.5rem;
+      .avatar {
+        img {
+          height: 2rem;
+        }
+      }
+      .username {
+        h2 {
+          font-size: 0.5rem;
+        }
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+
+  @media screen and (min-width: 667px) {
+    .current-user {
+      gap: 1rem;
+      .avatar {
+        img {
+          height: 3rem;
+        }
+      }
+      .username {
+        h2 {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 740px) {
+    .brand {
+      gap: 1rem;
+      img {
+        height: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contacts {
+      gap: 0.5rem;
+      .contact {
+        min-height: 3rem;
+        font-size: 0.5rem;
+        .avatar {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 740px) {
+    .contacts {
+      gap: 1rem;
+      .contact {
+        min-height: 4rem;
+        font-size: 0.5rem;
+        .avatar {
+          img {
+            height: 3rem;
+          }
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .current-user {
+      gap: 0.5rem;
+      .avatar {
+        img {
+          height: 2rem;
+        }
+      }
+      .username {
+        h2 {
+          font-size: 0.5rem;
+        }
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 740px) {
+    .current-user {
+      gap: 1rem;
+      .avatar {
+        img {
+          height: 3rem;
+        }
+      }
+      .username {
+        h2 {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+  
+
+
+  @media screen and (min-width: 280px) and (max-width: 653px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 653px) {
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 653px) {
+    .brand {
+      gap: 1rem;
+      img {
+        height: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 653px) {
+    .contacts {
+      gap: 0.5rem;
+      .contact {
+        min-height: 3rem;
+        font-size: 0.5rem;
+        .avatar {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 653px) {
+    .contacts {
+      gap: 1rem;
+      .contact {
+        min-height: 4rem;
+        font-size: 1rem;
+        .avatar {
+          img {
+            height: 3rem;
+          }
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 653px) {
+    .current-user {
+      gap: 0.5rem;
+      .avatar {
+        img {
+          height: 2rem;
+        }
+      }
+      .username {
+        h2 {
+          font-size: 0.5rem;
+        }
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 653px) {
+    .current-user {
+      gap: 1rem;
+      .avatar {
+        img {
+          height: 3rem;
+        }
+      }
+      .username {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
 
 `;
+
+
+
