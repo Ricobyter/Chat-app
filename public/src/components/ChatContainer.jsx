@@ -171,5 +171,11 @@ overflow: hidden;
     }
 }
 
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .chat-messages{
+        padding: 1rem 0.5rem;
+    }
+  }
+
 
 `
