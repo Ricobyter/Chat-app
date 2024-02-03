@@ -25,6 +25,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 justify-content: center;
+background-color: black;
 color: white;
 h1{
     font-size: 40px;
