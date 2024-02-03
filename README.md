@@ -8,10 +8,6 @@ Talkie is a real-time chat application built with the MERN (MongoDB, Express, Re
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
