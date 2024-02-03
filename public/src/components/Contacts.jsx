@@ -77,6 +77,7 @@ display: grid;
   .brand {
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 1rem;
     justify-content: center;
     img {
@@ -91,6 +92,7 @@ display: grid;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
     overflow: auto;
     gap: 0.8rem;
     &::-webkit-scrollbar {
@@ -109,7 +111,8 @@ display: grid;
       border-radius: 0.2rem;
       padding: 0.4rem;
       display: flex;
-      gap: 1rem;
+      gap: -1rem;
+
       align-items: center;
       transition: 0.5s ease-in-out;
       .avatar {
@@ -133,6 +136,7 @@ display: grid;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2rem;
     .avatar {
       img {
@@ -282,6 +286,7 @@ display: grid;
       gap: 0.5rem;
       .contact {
         min-height: 3rem;
+        text-align: center;
         font-size: 0.5rem;
         .avatar {
           img {
@@ -294,7 +299,7 @@ display: grid;
 
   @media screen and (min-width: 667px) {
     .contacts {
-      gap: 1rem;
+      gap: 0.5rem;
       .contact {
         min-height: 4rem;
         font-size: 0.5rem;

@@ -38,6 +38,19 @@ img{
 span{
   color: #4e00ff;
 }
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  img{
+    height: 15rem;
+  }
+}
+
 `
 
 
