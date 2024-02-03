@@ -19,7 +19,9 @@ Talkie is a real-time chat application built with the MERN (MongoDB, Express, Re
 ## Tech Stack
 
 - ReactJS
-- React-styled components
+- NodeJS
+- ExpressJS
+- React-styled-components
 - MongoDB
 - TailwindCSS
 - BCrypt
@@ -39,4 +41,4 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/talkie.git
+   git clone https://github.com/Ricobyter/talkie.git
