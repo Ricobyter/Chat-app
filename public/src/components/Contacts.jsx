@@ -106,7 +106,7 @@ display: grid;
       min-height: 5rem;
       cursor: pointer;
       width: 90%;
-      border-radius: 0.2rem;
+      border-radius: 2rem;
       padding: 0.4rem;
       display: flex;
       align-items: center;
@@ -121,6 +121,9 @@ display: grid;
         gap: 1rem;
         h3 {
           color: white;
+          text-align: center;
+        align-items: center;
+        justify-content: center;
         }
       }
     }
@@ -254,6 +257,11 @@ display: grid;
         font-size: 0.5rem;
       }
     }
+    .username{
+      h2{
+        font-size: 0;
+        color: transparent;
+      }
   }
 
   @media screen and (min-width: 375px) and (max-width: 667px) {
@@ -275,7 +283,7 @@ display: grid;
         height: 2rem;
       }
       h3 {
-        font-size: 1rem;
+        font-size: 0 rem;
       }
     }
   }
@@ -317,6 +325,15 @@ display: grid;
   }
 
   @media screen and (min-width: 375px) and (max-width: 667px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
+    .contact{
+      gap: 0.5rem;
+      width: 50%;
+      border-radius: 100px;
+    }
     .current-user {
       gap: 0.5rem;
       .avatar {
@@ -335,11 +352,15 @@ display: grid;
   }
 
   @media screen and (min-width: 667px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .current-user {
       gap: 1rem;
       .avatar {
         img {
-          height: 3rem;
+          height: 5rem;
         }
       }
       .username {
@@ -351,6 +372,10 @@ display: grid;
   }
 
   @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .brand {
       gap: 0.5rem;
       img {
@@ -363,6 +388,10 @@ display: grid;
   }
   
   @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .brand {
       gap: 0.5rem;
       img {
@@ -375,6 +404,10 @@ display: grid;
   }
   
   @media screen and (min-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .brand {
       gap: 1rem;
       img {
@@ -387,6 +420,10 @@ display: grid;
   }
   
   @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .contacts {
       gap: 0.5rem;
       .contact {
@@ -402,6 +439,10 @@ display: grid;
   }
   
   @media screen and (min-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .contacts {
       gap: 1rem;
       .contact {
@@ -421,6 +462,7 @@ display: grid;
   }
   
   @media screen and (min-width: 360px) and (max-width: 740px) {
+    
     .current-user {
       gap: 0.5rem;
       .avatar {
@@ -439,6 +481,7 @@ display: grid;
   }
   
   @media screen and (min-width: 740px) {
+    
     .current-user {
       gap: 1rem;
       .avatar {
@@ -457,6 +500,10 @@ display: grid;
 
 
   @media screen and (min-width: 280px) and (max-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .brand {
       gap: 0.5rem;
       img {
@@ -469,6 +516,10 @@ display: grid;
   }
   
   @media screen and (min-width: 280px) and (max-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .brand {
       gap: 0.5rem;
       img {
@@ -481,6 +532,10 @@ display: grid;
   }
   
   @media screen and (min-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .brand {
       gap: 1rem;
       img {
@@ -493,6 +548,10 @@ display: grid;
   }
   
   @media screen and (min-width: 280px) and (max-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .contacts {
       gap: 0.5rem;
       .contact {
@@ -508,6 +567,10 @@ display: grid;
   }
   
   @media screen and (min-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .contacts {
       gap: 1rem;
       .contact {
@@ -527,6 +590,10 @@ display: grid;
   }
   
   @media screen and (min-width: 280px) and (max-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .current-user {
       gap: 0.5rem;
       .avatar {
@@ -545,6 +612,10 @@ display: grid;
   }
   
   @media screen and (min-width: 653px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
     .current-user {
       gap: 1rem;
       .avatar {
@@ -560,6 +631,70 @@ display: grid;
     }
   }
 
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contacts .contact .username h3{
+      font-size: 0;
+      color: transparent;
+    }
+    .brand {
+      gap: 0.5rem;
+      img {
+        height: 1.5rem;
+      }
+      h3 {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 645px) {
+    .contacts .contact .username h3{
+      font-size: 10px;
+      color: white;
+    }
+    .brand {
+      gap: 1rem;
+      img {
+        height: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 500px) {
+    .contacts .contact .username h3{
+      font-size: 10px;
+      color: white;
+    }
+    .brand {
+      gap: 1rem;
+      img {
+        height: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
 
 `;
 
