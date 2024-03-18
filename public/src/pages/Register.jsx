@@ -71,11 +71,10 @@ function Register() {
     }
     return true;
   }
-    ;
+    ` `
 
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value })
-
   }
 
   return (
