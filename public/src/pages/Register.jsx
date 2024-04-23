@@ -7,9 +7,7 @@ import "react-toastify/dist/ReactToastify.css"
 import axios from "axios"
 import { registerRoute } from '../utils/APIRoutes'
 
-
 function Register() {
-
   const navigate = useNavigate()
 
   const [values, setValues] = useState({
@@ -71,7 +69,7 @@ function Register() {
     }
     return true;
   }
-    ` `
+
 
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value })
@@ -83,7 +81,7 @@ function Register() {
         <form onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>Talkie</h1>
+            <h1 className='font-bold'>TalkHub</h1>
           </div>
           <input
             type="text"
@@ -105,7 +103,6 @@ function Register() {
             placeholder='Confirm Password'
             name='confirmPassword'
             onChange={e => handleChange(e)} />
-
           <button type='submit'>Create User</button>\
           <span>Already have an account ? <Link to='/login'>Login Now</Link></span>
         </form>

@@ -74,7 +74,7 @@ function Login() {
         <form onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>Talkie</h1>
+            <h1 className='font-bold'>TalkHub</h1>
           </div>
           <input
             type="text"

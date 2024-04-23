@@ -6,8 +6,6 @@ import axios from 'axios';
 import { getAllMessagesRoute, sendMessageRoute } from '../utils/APIRoutes';
 import {v4 as uuidv4} from 'uuid'
 
-
-
 export default function ChatContainer({ currentChat, currentUser, socket }) {
 
     const [messages, setMessages] = useState([]);
@@ -77,8 +75,6 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
                                 <div className="username">
                                     <h3>
                                         {currentChat.username}
-
-
                                     </h3>
                                 </div>
                             </div>
@@ -98,9 +94,7 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
                                             </div>
 
                                         </div>
-
                                     )
-
                                 })
                             }
                         </div>
