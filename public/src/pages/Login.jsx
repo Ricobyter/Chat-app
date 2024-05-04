@@ -41,7 +41,8 @@ function Login() {
         password
       });
       if (data.status === false) {
-        toast.error(data.msg, toastOptions)
+        toast.error("Wrong username or password", toastOptions)
+        alert("Not correct")
       }
       if (data.status === true) {
         localStorage.setItem('chat-app-user', JSON.stringify(data.user))

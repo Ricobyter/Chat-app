@@ -63,8 +63,6 @@ function Chat() {
           <Welcome currentUser={currentUser}/>):
           (
             <ChatContainer currentChat={currentChat} currentUser = {currentUser} socket={socket}/>
-          
-          
           )
         }
       </div>

@@ -15,6 +15,7 @@ Talkie is a real-time chat application built with the MERN (MongoDB, Express, Re
 - Emoji support with emoji-mart.
 - Secure authentication using BCrypt.
 - Stylish UI with React-styled components and TailwindCSS.
+- Crypto JS for end to end encoding of messages
 
 ## Tech Stack
 
@@ -27,6 +28,7 @@ Talkie is a real-time chat application built with the MERN (MongoDB, Express, Re
 - BCrypt
 - emoji-mart
 - Vite
+- Crypto JS
 
 ## Prerequisites
 
