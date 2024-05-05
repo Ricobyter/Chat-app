@@ -66,7 +66,7 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
                     <Container>
                         <div className="chat-header ">
                             <div className="user-details">
-                                <div className="avatar m-auto">
+                                <div className="avatar ">
                                     <img
                                         src={`data:image/svg+xml;base64,${currentChat.avatarImage}`}
                                         alt=""
@@ -107,7 +107,7 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
 
 const Container = styled.div`
 display: grid;
-grid-template-rows: 10% 78% 10%;
+grid-template-rows: 11% 78% 10%;
 gap: 0.05rem;
 overflow: hidden;
 @media screen and (min-width: 720px) and (max-width: 1080px) {

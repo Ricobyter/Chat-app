@@ -45,7 +45,7 @@ export default function Contacts({ contacts, currentUser, changeChat }) {
                       />
                     </div>
                     <div className="username">
-                      <h3>{contact.username}</h3>
+                      <h3 className=''>{contact.username}</h3>
                     </div>
                   </div>
                 );
@@ -83,6 +83,9 @@ background-color: #080420;
     height: 2rem;
   }
   h3 {
+    @media screen and (min-width: 360px) and (max-width: 1080px) {
+      display:none
+    }
     color: white;
     text-transform: uppercase;
   }
@@ -111,6 +114,7 @@ background-color: #080420;
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content:center;
     transition: 0.5s ease-in-out;
     .avatar {
       img {
@@ -118,6 +122,9 @@ background-color: #080420;
       }
     }
     .username {
+      @media screen and (min-width: 360px) and (max-width: 1080px) {
+        display:none;
+      }
       h3 {
         color: white;
       }
@@ -134,18 +141,26 @@ background-color: #080420;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  @media screen and (min-width: 360px) and (max-width: 1080px) {
+    flex-direction:column;
+  }
   .avatar {
+    
     img {
       height: 4rem;
       max-inline-size: 100%;
+      @media screen and (min-width: 360px) and (max-width: 1080px) {
+        height:3rem;
+      }
     }
   }
   .username {
     h2 {
       color: white;
+      font-weight: 600;
     }
   }
-  @media screen and (min-width: 720px) and (max-width: 1080px) {
+  @media screen and (min-width: 360px) and (max-width: 1080px) {
     gap: 0.5rem;
     .username {
       h2 {
