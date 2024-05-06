@@ -81,6 +81,9 @@ background-color: #080420;
   justify-content: center;
   img {
     height: 2rem;
+    @media screen and (min-width: 360px) and (max-width: 1080px) {
+      height: 1.5rem;
+    }
   }
   h3 {
     @media screen and (min-width: 360px) and (max-width: 1080px) {

@@ -88,6 +88,11 @@ background-color: #131324;
   @media screen and (min-width: 720px) and (max-width: 1080px) {
     grid-template-columns: 15% 85%;
   }
+  @media screen and (min-width: 360px) and (max-width: 720px) {
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 17% 83%;
+  }
 }
 `;
 

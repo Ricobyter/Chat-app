@@ -159,7 +159,7 @@ overflow: hidden;
       border-radius: 1rem;
       color: #d1d1d1;
       @media screen and (min-width: 720px) and (max-width: 1080px) {
-        max-width: 70%;
+        max-width:70%;
       }
     }
   }
